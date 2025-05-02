@@ -1,0 +1,123 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Resetear estilos */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para ocupar siempre todo el alto de la pantalla */
+html,
+body {
+    height: 100%;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    flex: 1;
+    /* Hace que el main ocupe todo el espacio disponible entre el header y footer */
+}
+
+header {
+    background-color: rgb(33, 75, 201);
+    color: white;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 2.2vw;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hamburguesa {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburguesa span {
+    background: black;
+    height: 4px;
+    width: 25px;
+    margin: 4px;
+}
+
+/* Estilos para el main */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+section {
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: rgb(33, 75, 201);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+@media(max-width: 600px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: rgb(33, 75, 201);
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 150px;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .hamburguesa {
+        display: flex;
+    }
+
+    nav ul.verMenu {
+        display: flex;
+    }
+}
