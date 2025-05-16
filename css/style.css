@@ -321,13 +321,108 @@ img {
     -moz-border-radius: 0.625rem;
     -ms-border-radius: 0.625rem;
     -o-border-radius: 0.625rem;
-
     border: none;
     padding: 0.375rem 0.625rem;
 }
 
 .newsletter__input:focus {
     outline: 2px solid var(--color-naranja-500);
+}
+
+/* login */
+.login {
+    background-color: var(--color-blanco);
+    width: 28.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.875rem;
+    border-radius: 1.25rem;
+    -webkit-border-radius: 1.25rem;
+    -moz-border-radius: 1.25rem;
+    -ms-border-radius: 1.25rem;
+    -o-border-radius: 1.25rem;
+    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.10);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login__form {
+    width: 100%;
+    padding: 2.5rem 0;
+}
+
+.login__fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-align: center;
+}
+
+.login__legend {
+    font-size: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+.login__campo {
+    margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.login__input {
+    border: none;
+    border-radius: 0.625rem;
+    -webkit-border-radius: 0.625rem;
+    -moz-border-radius: 0.625rem;
+    -ms-border-radius: 0.625rem;
+    -o-border-radius: 0.625rem;
+    padding: 0.625rem 0.9375rem;
+    background-color: var(--color-naranja-500);
+    color: var(--color-blanco);
+}
+
+.login__input::placeholder {
+    color: var(--color-blanco);
+}
+
+.login__input:focus {
+    outline: 2px solid var(--color-naranja-700);
+}
+
+.login__submit {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.login__redes {
+    width: 100%;
+}
+
+.login__texto-redes {
+    text-align: center;
+    margin: 0;
+}
+
+.login__sociales {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.25rem;
+}
+
+.login__social {
+    background-color: var(--color-blanco);
+    padding: 0.625rem;
+    border-radius: 6.25rem;
+    -webkit-border-radius: 6.25rem;
+    -moz-border-radius: 6.25rem;
+    -ms-border-radius: 6.25rem;
+    -o-border-radius: 6.25rem;
+    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.10);
 }
 
 /* footer */
