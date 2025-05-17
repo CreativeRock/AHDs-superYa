@@ -224,7 +224,20 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
+    border-radius: 1.25rem;
+    -webkit-border-radius: 1.25rem;
+    -moz-border-radius: 1.25rem;
+    -ms-border-radius: 1.25rem;
+    -o-border-radius: 1.25rem;
+}
 
+/* hero mercado */
+.hero-mercado {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url(../assets/img/heroMercado.jpg) var(--color-gris-200) 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
     border-radius: 1.25rem;
     -webkit-border-radius: 1.25rem;
     -moz-border-radius: 1.25rem;
@@ -234,7 +247,6 @@ img {
 
 .beneficios {
     padding: calc(var(--separacion) * 2) 0;
-
     display: flex;
     gap: 20px;
 }
@@ -252,17 +264,14 @@ img {
     width: 150px;
     height: 150px;
     background-color: var(--color-amarillo-500);
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     border-radius: 6.25rem;
     -webkit-border-radius: 6.25rem;
     -moz-border-radius: 6.25rem;
     -ms-border-radius: 6.25rem;
     -o-border-radius: 6.25rem;
-
     box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.04);
 }
 
@@ -275,7 +284,6 @@ img {
 /* servicios */
 .servicios {
     padding: var(--separacion) 0;
-
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 1.5rem;
@@ -289,12 +297,9 @@ img {
     -moz-border-radius: 1.25rem;
     -ms-border-radius: 1.25rem;
     -o-border-radius: 1.25rem;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-
     transition-property: transform;
     transition-duration: .3s;
 }
@@ -343,20 +348,213 @@ img {
 
 }
 
-/* newsleter */
-.newsletter {
-    height: 450px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/newsletter.jpeg) var(--color-gris-200) 100% / cover no-repeat;
-    background-position: 0 0;
+/* categorias mercado */
+.categorias {
+    padding: var(--separacion) 0;
+}
 
+.categorias__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding-top: var(--separacion);
+}
+
+.categorias__tarjeta {
+    height: 21.875rem;
+    padding: 1.25rem;
+    color: var(--color-blanco);
+    border-radius: 1.25rem;
+    -webkit-border-radius: 1.25rem;
+    -moz-border-radius: 1.25rem;
+    -ms-border-radius: 1.25rem;
+    -o-border-radius: 1.25rem;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
+
+    transition-property: transform;
+    transition-duration: .3s;
+}
+
+.categorias__tarjeta:hover,
+.categorias__tarjeta:focus {
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+}
+
+.categorias__tarjeta:nth-child(1) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/categorias/01-embutidos.jpg) var(--color-gris-200) 100% / cover no-repeat;
+}
+
+.categorias__tarjeta:nth-child(2) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/categorias/02-panaderia.jpg) var(--color-gris-200) 100% / cover no-repeat;
+}
+
+.categorias__tarjeta:nth-child(3) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/categorias/03-lacteos.jpg) var(--color-gris-200) 100% / cover no-repeat;
+}
+
+.categorias__tarjeta:nth-child(4) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/categorias/04-snacks.jpg) var(--color-gris-200) 100% / cover no-repeat;
+}
+
+.categorias__nombre {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.categorias__enlace {
+    background-color: var(--color-amarillo-500);
+    font-weight: 700;
+    width: 60%;
+    margin: 0 0 0 auto;
+    text-align: center;
+}
+
+/* marcas seccion */
+.marcas {
+    height: 9.375rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin: calc(var(--separacion) * 2) 0;
+}
+
+.marca {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/categorias/01-embutidos.jpg) var(--color-gris-200) 100% / cover no-repeat;
+    border-radius: 1.25rem;
+    -webkit-border-radius: 1.25rem;
+    -moz-border-radius: 1.25rem;
+    -ms-border-radius: 1.25rem;
+    -o-border-radius: 1.25rem;
+}
+
+/* productos seccion */
+
+.productos__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding: var(--separacion) 0;
+}
+
+.producto {
+    background-color: var(--color-blanco);
     border-radius: 1.25rem;
     -webkit-border-radius: 1.25rem;
     -moz-border-radius: 1.25rem;
     -ms-border-radius: 1.25rem;
     -o-border-radius: 1.25rem;
 
-    margin-top: 2.1875rem;
+    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
+}
 
+.producto__imagen {
+    height: 200px;
+    padding: 1.25rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/productos/queso-dospinos.jpg) var(--color-gris-200) 100% / cover no-repeat;
+    border-radius: 1.25rem 1.25rem 0 0;
+    -webkit-border-radius: 1.25rem 1.25rem 0 0;
+    -moz-border-radius: 1.25rem 1.25rem 0 0;
+    -ms-border-radius: 1.25rem 1.25rem 0 0;
+    -o-border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.producto__etiquetas {
+    display: grid;
+    row-gap: 5.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    color: var(--color-blanco);
+}
+
+.producto__etiqueta,
+.producto__etiqueta--online,
+.producto__etiqueta--descuento {
+    background-color: var(--color-naranja-500);
+    padding: 0.3125rem;
+    border-radius: 0.3125rem;
+    -webkit-border-radius: 0.3125rem;
+    -moz-border-radius: 0.3125rem;
+    -ms-border-radius: 0.3125rem;
+    -o-border-radius: 0.3125rem;
+    font-size: 0.75rem;
+}
+
+.producto__etiqueta--descuento {
+    font-weight: 700;
+}
+
+.producto__etiqueta--online {
+    justify-self: start;
+}
+
+.producto__etiqueta--favorito {
+    background-color: transparent;
+    cursor: pointer;
+    justify-self: end;
+}
+
+.producto__etiqueta--descuento {
+    justify-self: start;
+}
+
+.producto__contenido {
+    padding: 0 1.25rem 1.25rem 1.25rem;
+    text-align: center;
+}
+
+.producto__nombre,
+.producto__precio {
+    margin: 0;
+}
+
+.producto__precio {
+    margin-bottom: 1.25rem;
+}
+
+.producto__precio .producto__precio--anterior {
+    color: var(--color-gris-300);
+    text-decoration: line-through;
+}
+
+.producto__precio--actual {
+    font-weight: 700;
+    font-size: 1.375rem;
+}
+
+.producto__nombre {
+    padding: 1.25rem 0;
+}
+
+.producto__acciones {
+    margin-top: 20px;
+}
+
+.producto__boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* newsleter */
+.newsletter {
+    height: 450px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/categorias/) var(--color-gris-200) 100% / cover no-repeat;
+    background-position: 0 0;
+    border-radius: 1.25rem;
+    -webkit-border-radius: 1.25rem;
+    -moz-border-radius: 1.25rem;
+    -ms-border-radius: 1.25rem;
+    -o-border-radius: 1.25rem;
+    margin-top: 2.1875rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -365,7 +563,6 @@ img {
 .newsletter__contenido {
     max-width: 34.375rem;
     color: var(--color-blanco);
-
     text-align: center;
 }
 
