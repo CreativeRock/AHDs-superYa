@@ -251,7 +251,8 @@ img {
     gap: 20px;
 }
 
-.beneficios__tarjeta {
+.beneficios__tarjeta,
+.beneficio-mercado {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -260,7 +261,8 @@ img {
     text-align: center;
 }
 
-.beneficios__imagen {
+.beneficios__imagen,
+.beneficio-contenedor-imagen {
     width: 150px;
     height: 150px;
     background-color: var(--color-amarillo-500);
@@ -275,7 +277,8 @@ img {
     box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.04);
 }
 
-.beneficios__titulo {
+.beneficios__titulo,
+.beneficio-mercado__titulo {
     margin-top: 1.25rem;
     font-size: 1.25rem;
     text-transform: uppercase;
@@ -544,10 +547,22 @@ img {
     gap: 0.5rem;
 }
 
+/* beneficios */
+.beneficios-mercado {
+    padding: var(--separacion) 0;
+}
+
+.beneficios-mercado-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
 /* newsleter */
 .newsletter {
     height: 450px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/categorias/) var(--color-gris-200) 100% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/newsletter.jpeg) var(--color-gris-200) 100% / cover no-repeat;
     background-position: 0 0;
     border-radius: 1.25rem;
     -webkit-border-radius: 1.25rem;
