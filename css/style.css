@@ -99,6 +99,13 @@ img {
     text-align: left;
 }
 
+.btn__icono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
 @media (width >=768px) {
     .titulo__seccion {
         font-size: 2.75rem;
@@ -133,6 +140,7 @@ img {
 
 .header__logo img {
     margin: 0 auto;
+    padding-bottom: 1.25rem;
 }
 
 .header__navegacion {
@@ -229,7 +237,7 @@ img {
 }
 
 .hero {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url(../assets/img/nrd-D6Tu_L3chLE-unsplash.jpg) var(--color-gris-200) 50%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url(../assets/img/hero/01-heroHome.webp) var(--color-gris-200) 50%;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -243,7 +251,7 @@ img {
 
 /* hero mercado */
 .hero-mercado {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url(../assets/img/heroMercado.jpg) var(--color-gris-200) 50%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url(../assets/img/hero/01-heroMercado.webp) var(--color-gris-200) 50%;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -369,22 +377,22 @@ img {
 
 .servicio:nth-child(1) {
     grid-column: 1 / 5;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/servicio-01.jpg) var(--color-gris-200) 100% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/servicios/servicio-01.webp) var(--color-gris-200) 100% / cover no-repeat;
 }
 
 .servicio:nth-child(2) {
     grid-column: 5 / 8;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/servicio-02.jpg) var(--color-gris-200) 100% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/servicios/servicio-02.webp) var(--color-gris-200) 100% / cover no-repeat;
 }
 
 .servicio:nth-child(3) {
     grid-column: 1 / 4;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/servicio-03.jpg) var(--color-gris-200) 100% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/servicios/servicio-03.webp) var(--color-gris-200) 100% / cover no-repeat;
 }
 
 .servicio:nth-child(4) {
     grid-column: 4 /8;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/servicio-04.jpg) var(--color-gris-200) 100% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/servicios/servicio-04.webp) var(--color-gris-200) 100% / cover no-repeat;
 }
 
 /* categorias mercado */
@@ -427,19 +435,19 @@ img {
 }
 
 .categorias__tarjeta:nth-child(1) {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/categorias/01-embutidos.jpg) var(--color-gris-200) 100% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/categorias/01-embutidos.webp) var(--color-gris-200) 100% / cover no-repeat;
 }
 
 .categorias__tarjeta:nth-child(2) {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/categorias/02-panaderia.jpg) var(--color-gris-200) 100% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/categorias/02-panaderia.webp) var(--color-gris-200) 100% / cover no-repeat;
 }
 
 .categorias__tarjeta:nth-child(3) {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/categorias/03-lacteos.jpg) var(--color-gris-200) 100% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/categorias/03-lacteos.webp) var(--color-gris-200) 100% / cover no-repeat;
 }
 
 .categorias__tarjeta:nth-child(4) {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/categorias/04-snacks.jpg) var(--color-gris-200) 100% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/categorias/04-snacks.webp) var(--color-gris-200) 100% / cover no-repeat;
 }
 
 .categorias__nombre {
@@ -495,7 +503,7 @@ img {
 .producto__imagen {
     height: 200px;
     padding: 1.25rem;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/productos/queso-dospinos.jpg) var(--color-gris-200) 100% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/productos/queso-dospinos.webp) var(--color-gris-200) 100% / cover no-repeat;
     border-radius: 1.25rem 1.25rem 0 0;
     -webkit-border-radius: 1.25rem 1.25rem 0 0;
     -moz-border-radius: 1.25rem 1.25rem 0 0;
@@ -650,7 +658,7 @@ img {
 /* newsleter */
 .newsletter {
     height: 450px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/newsletter.jpeg) var(--color-gris-200) 100% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url(../assets/img/newsletter/newsletter.webp) var(--color-gris-200) 100% / cover no-repeat;
     background-position: 0 0;
     border-radius: 1.25rem;
     -webkit-border-radius: 1.25rem;
