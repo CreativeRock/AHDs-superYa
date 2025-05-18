@@ -1,0 +1,11 @@
+<svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Iconos/cards/hand-card">
+<g id="Vector">
+<path d="M34.875 28.625H69.25Z" fill="#222222"/>
+<path d="M34.875 28.625H69.25" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path id="Vector_2" d="M6.75 34.875L15.5207 25.008C17.8928 22.3393 21.2929 20.8125 24.8633 20.8125H25.5" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M6.75 61.4385L23.9375 61.4375L36.4375 52.0635C36.4375 52.0635 38.9659 50.3525 42.6875 47.3753C50.5 41.1257 42.6875 31.2298 34.875 36.4366C28.5128 40.6766 22.375 44.251 22.375 44.251" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M25.5 42.6875V22.375C25.5 18.9232 28.2982 16.125 31.75 16.125H63C66.4519 16.125 69.25 18.9232 69.25 22.375V41.125C69.25 44.5769 66.4519 47.375 63 47.375H42.6875" stroke="#222222" stroke-width="4"/>
+</g>
+</svg>

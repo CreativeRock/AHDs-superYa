@@ -1,0 +1,14 @@
+<svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Iconos/Delivery/delivery-truck">
+<path id="Vector" d="M25.5 59.875C28.9518 59.875 31.75 57.0769 31.75 53.625C31.75 50.1731 28.9518 47.375 25.5 47.375C22.0482 47.375 19.25 50.1731 19.25 53.625C19.25 57.0769 22.0482 59.875 25.5 59.875Z" stroke="#222222" stroke-width="4" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M56.75 59.875C60.2019 59.875 63 57.0769 63 53.625C63 50.1731 60.2019 47.375 56.75 47.375C53.2981 47.375 50.5 50.1731 50.5 53.625C50.5 57.0769 53.2981 59.875 56.75 59.875Z" stroke="#222222" stroke-width="4" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M31.9063 53.625H47.375V21.125C47.375 20.0895 46.5356 19.25 45.5 19.25H3.625" stroke="#222222" stroke-width="4" stroke-linecap="round"/>
+<path id="Vector_4" d="M18.1563 53.625H11.75C10.7145 53.625 9.875 52.7856 9.875 51.75V36.4375" stroke="#222222" stroke-width="4" stroke-linecap="round"/>
+<g id="Vector_5">
+<path d="M6.75 28.625H19.25Z" fill="#222222"/>
+<path d="M6.75 28.625H19.25" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path id="Vector_6" d="M47.375 28.625H64.9066C65.6475 28.625 66.3191 29.0614 66.62 29.7385L72.2134 42.3238C72.32 42.5638 72.375 42.8231 72.375 43.0853V51.75C72.375 52.7856 71.5356 53.625 70.5 53.625H64.5625" stroke="#222222" stroke-width="4" stroke-linecap="round"/>
+<path id="Vector_7" d="M47.375 53.625H50.5" stroke="#222222" stroke-width="4" stroke-linecap="round"/>
+</g>
+</svg>
