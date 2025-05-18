@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 
-<body>
+<body class="bodo-color-login">
 
     <main>
         <section class="login">
@@ -28,23 +28,24 @@
                 </a>
             </div>
 
-            <form class="login__form">
+            <form class="login__form" id="login-form">
                 <fieldset class="login__fieldset">
                     <legend class="login__legend">Iniciar Sesión</legend>
 
                     <div class="login__campo">
-                        <label class="login__label" for="email">Tu E-mail:</label>
-                        <input class="login__input" type="email" id="email" placeholder="Ingresa Tu E-mail" required>
-                    </div>
-
-                    <div class="login__campo">
-                        <label class="login__label" for="pass">Tu Contraseña:</label>
-                        <input class="login__input" type="password" id="pass" placeholder="Ingresa tu contraseña"
+                        <label class="login__label" for="usuario">E-mail o usuario</label>
+                        <input class="login__input" type="email" id="usuario" placeholder="Admin@admin para ingresar"
                             required>
                     </div>
 
                     <div class="login__campo">
-                        <input class="login__submit btn-primario" type="submit" value="Acceder">
+                        <label class="login__label" for="pass">Contraseña:</label>
+                        <input class="login__input" type="password" id="pass"
+                            placeholder="Contraseña para ingresar 1234" required>
+                    </div>
+
+                    <div class="login__campo">
+                        <input class="login__submit btn-primario" type="submit" value="Acceder" id="acceder">
                     </div>
                 </fieldset>
             </form>
@@ -84,12 +85,10 @@
                     </div>
                 </div>
             </div>
-
-
         </section>
     </main>
     <!-- JS -->
-    <!-- <script src="js/app.js"></script> -->
+    <script src="../../js/login.js"></script>
 </body>
 
 </html>
