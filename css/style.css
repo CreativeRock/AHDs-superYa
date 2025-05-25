@@ -1040,8 +1040,6 @@ img {
 }
 
 .login__input {
-    width: 100%;
-    overflow: hidden;
     border: none;
     border-radius: 0.625rem;
     padding: 0.625rem 0.9375rem;
@@ -1058,11 +1056,14 @@ img {
 }
 
 .login__submit {
-    width: 100%;
-    overflow: hidden;
     text-transform: uppercase;
     font-weight: 700;
     padding: 0.75rem 0.9375rem;
+}
+
+.login__input,
+.login__submit {
+    max-width: 100%;
 }
 
 .login__redes {
