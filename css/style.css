@@ -991,7 +991,7 @@ img {
 .login {
     background-color: var(--color-blanco);
     width: 90%;
-    max-width: 31.25rem;
+    max-width: 34.375rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1040,6 +1040,8 @@ img {
 }
 
 .login__input {
+    width: 100%;
+    overflow: hidden;
     border: none;
     border-radius: 0.625rem;
     padding: 0.625rem 0.9375rem;
@@ -1056,6 +1058,8 @@ img {
 }
 
 .login__submit {
+    width: 100%;
+    overflow: hidden;
     text-transform: uppercase;
     font-weight: 700;
     padding: 0.75rem 0.9375rem;
