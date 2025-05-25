@@ -124,7 +124,7 @@ img {
     gap: 8px;
 }
 
-/* header */
+/* header Home */
 .header {
     padding: 1.5625rem 0;
     display: flex;
@@ -180,7 +180,6 @@ img {
     --icono-menu-boton: url(../assets/icons/navegacion/menu-scale.svg);
     --opacidad-menu: 1;
     --evento-pointer-menu: unset;
-
 }
 
 .header__boton-menu input {
@@ -193,6 +192,7 @@ img {
         --evento-pointer-menu: unset;
         display: flex;
         flex-direction: column;
+        padding: var(--separacion) 0 0 0;
     }
 
     .header__logo {
@@ -245,50 +245,70 @@ img {
     }
 }
 
-/* header-mercado */
+/** HEADER-MERCADO **/
 .header-mercado {
+    --icono-menu-mercado-boton: url(../assets/icons/navegacion/menu.svg);
+    --opacidad-menu: 0;
+    --evento-pointer-menu: none;
+
     display: flex;
     align-items: center;
-    padding: var(--separacion) 0;
+    justify-content: space-between;
+    padding: 1.5625rem 0;
+}
+
+.header-mercado__nav {
+    pointer-events: var(--evento-pointer-menu);
+    opacity: var(--opacidad-menu);
+    transition: opacity .4s;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    padding: 1.25rem;
+    margin: 0 auto;
+
+    background: #fafafa10;
+    backdrop-filter: blur(0.375rem);
+    border: 1px solid var(--color-naranja-100);
+    border-radius: 1rem;
+
+    width: 90%;
+
+    position: absolute;
+    top: 100px;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .header-mercado__input {
-    width: 450px;
+    width: 100%;
     border: none;
     background-color: var(--color-naranja-500);
     padding: 0.625rem;
     border-radius: 1.25rem;
-    -webkit-border-radius: 1.25rem;
-    -moz-border-radius: 1.25rem;
-    -ms-border-radius: 1.25rem;
-    -o-border-radius: 1.25rem;
 }
 
 .header-mercado__input::placeholder {
     color: var(--color-blanco);
 }
 
-.header-mercado__nav,
-.header-mercado__busqueda,
-.header-mercado__acciones,
-.header-mercado__enlace {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header-mercado__nav {
-    gap: 4.875rem;
-    margin: 0 auto 0 3.125rem;
-}
-
 .header-mercado__acciones {
-    gap: 3.125rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
 }
 
 .header-mercado__enlace {
-    gap: 0.5rem;
+    padding: 0.625rem;
+    border-radius: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: var(--color-gris-400);
+    background-color: var(--color-blanco);
 }
 
 .header-mercado__carrito {
@@ -298,12 +318,13 @@ img {
     justify-content: center;
     align-items: center;
     gap: 1.25rem;
-    border-radius: 0.625rem;
-    -webkit-border-radius: 0.625rem;
-    -moz-border-radius: 0.625rem;
-    -ms-border-radius: 0.625rem;
-    -o-border-radius: 0.625rem;
+    border-radius: 6.25rem;
+
     color: var(--color-blanco);
+
+    .header-mercado__info {
+        display: none;
+    }
 }
 
 .header-mercado__precio {
@@ -328,6 +349,135 @@ img {
     color: var(--color-blanco);
 }
 
+.header-mercado__boton-menu {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-image: var(--icono-menu-mercado-boton);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: background-image .3s;
+}
+
+.header-mercado:has(.header-mercado__menu-input:checked) {
+    --icono-menu-mercado-boton: url(../assets/icons/navegacion/menu-scale.svg);
+    --opacidad-menu: 1;
+    --evento-pointer-menu: unset;
+}
+
+.header-mercado__boton-menu input {
+    display: none;
+}
+
+@media (width >=1024px) {
+    .header-mercado {
+        --opacidad-menu: 1;
+        --evento-pointer-menu: unset;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5625rem 0;
+    }
+
+    .header-mercado__nav {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 6.25rem;
+        padding: 0;
+        margin: 0 auto 0 3.125rem;
+        background: none;
+        backdrop-filter: none;
+        border: none;
+        border-radius: 1rem;
+        position: static;
+    }
+
+    .header-mercado__input {
+        width: 450px;
+        border: none;
+        background-color: var(--color-naranja-500);
+        padding: 0.625rem;
+        border-radius: 1.25rem;
+    }
+
+    .header-mercado__input::placeholder {
+        color: var(--color-blanco);
+    }
+
+    .header-mercado__acciones {
+        display: flex;
+        flex-direction: row;
+        gap: 1.25rem;
+    }
+
+    .header-mercado__enlace {
+        padding: 0;
+        border-radius: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--color-gris-400);
+        background-color: var(--color-blanco);
+    }
+
+    .header-mercado__carrito {
+        padding: 0.625rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.75rem;
+        border-radius: 0.625rem;
+
+        color: var(--color-blanco);
+
+        .header-mercado__info {
+            display: block;
+        }
+    }
+
+    .header-mercado__precio {
+        font-weight: 700;
+    }
+
+    .header-mercado__precio,
+    .header-mercado__estado {
+        margin: 0;
+    }
+
+    .header-mercado__icono-carrito {
+        filter: var(--color-blanco);
+        -webkit-filter: var(--color-blanco);
+    }
+
+    .navegacion__enlace {
+        color: var(--color-gris-400);
+    }
+
+    .navegacion__enlace--btn {
+        color: var(--color-blanco);
+    }
+
+    .header-mercado__boton-menu {
+        width: 40px;
+        height: 40px;
+        border: none;
+        background-image: var(--icono-menu-mercado-boton);
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+        transition: background-image .3s;
+    }
+
+
+    .header-mercado__boton-menu {
+        display: none;
+    }
+}
+
+/* Hero Home */
 .hero {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url(../assets/img/hero/01-heroHome.avif) var(--color-gris-200) 50%;
     background-position: center center;
