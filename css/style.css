@@ -984,7 +984,7 @@ img {
 }
 
 /* login */
-.bodo-color-login {
+.body-color-login {
     background-color: var(--color-naranja-50);
 }
 
@@ -1020,6 +1020,7 @@ img {
 }
 
 .login__fieldset {
+    width: 100%;
     padding: 0;
     margin: 0;
     border: none;
@@ -1041,10 +1042,6 @@ img {
 .login__input {
     border: none;
     border-radius: 0.625rem;
-    -webkit-border-radius: 0.625rem;
-    -moz-border-radius: 0.625rem;
-    -ms-border-radius: 0.625rem;
-    -o-border-radius: 0.625rem;
     padding: 0.625rem 0.9375rem;
     background-color: var(--color-naranja-500);
     color: var(--color-blanco);
@@ -1061,6 +1058,7 @@ img {
 .login__submit {
     text-transform: uppercase;
     font-weight: 700;
+    padding: 0.75rem 0.9375rem;
 }
 
 .login__redes {
