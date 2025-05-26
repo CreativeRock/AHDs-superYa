@@ -477,6 +477,35 @@ img {
     }
 }
 
+/** Header Productos **/
+.header-productos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.875rem 0;
+}
+
+.header-productos__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-productos__acciones {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.header-productos__enlace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-naranja-500);
+    font-weight: 600;
+}
+
 /* Hero Home */
 .hero {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url(../assets/img/hero/01-heroHome.avif) var(--color-gris-200) 50%;
@@ -841,10 +870,37 @@ img {
 }
 
 /* productos seccion */
-.seccion-productos__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.carrito-compras {
+    background-color: var(--color-naranja-500);
+    border-radius: 16px;
+    padding: 1.5625rem;
+}
+
+@media (width >=768px) {
+    .carrito-compras {
+        margin: var(--separacion) 0;
+    }
+}
+
+.carrito-compras__contenido {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    color: var(--color-blanco);
+}
+
+.carrito-compras__precio {
+    margin-bottom: 0.625rem;
+}
+
+
+@media (width >=768px) {
+    .seccion-productos__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 .ruta__lista {
@@ -853,7 +909,13 @@ img {
     gap: 0.5rem;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 1.875rem 0;
+}
+
+@media (width >=768px) {
+    .ruta__lista {
+        padding: 0;
+    }
 }
 
 .ruta__item {
@@ -883,6 +945,14 @@ img {
     border: none;
     font-weight: 700;
     padding: 0 0.625rem 0 0;
+    width: 74%;
+    text-align: center;
+}
+
+@media (width >=768px) {
+    .orden__select {
+        width: auto;
+    }
 }
 
 .orden__select:focus {
