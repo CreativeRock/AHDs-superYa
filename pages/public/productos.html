@@ -19,53 +19,42 @@
 </head>
 
 <body>
-    <header class="header-mercado contenedor">
-        <div class="header-mercado__logo">
+    <header class="header-productos contenedor">
+        <div class="header-productos__logo">
             <a href="../../index.html">
                 <img src="../../assets/img/logo/logo.svg" alt="Logo de SuperYa MiniMarket">
             </a>
         </div>
 
-        <nav class="header-mercado__nav">
-            <div class="header-mercado__busqueda">
-                <form>
-                    <input class="header-mercado__input" type="text" placeholder="¿Qué estás buscando?"
-                        aria-label="Buscar productos">
-                </form>
-            </div>
-
-            <div class="header-mercado__acciones">
-                <a class="header-mercado__enlace" href="../../pages/public/login.html">
-                    <span class="header-mercado__icono">
+        <nav class="header-productos__nav">
+            <div class="header-productos__acciones">
+                <a class="header-productos__enlace" href="../../pages/public/login.html">
+                    <span class="header-productos__icono">
                         <img src="../../assets/icons/user/user 1.svg" alt="Icono de usuario">
                     </span>
                     Cuenta
                 </a>
 
-                <a class="header-mercado__enlace" href="#">
-                    <span class="header-mercado__icono">
+                <a class="header-productos__enlace" href="#">
+                    <span class="header-productos__icono">
                         <img src="../../assets/icons/list/list-select.svg" alt="Icono de listas">
                     </span>
                     Listas
                 </a>
             </div>
         </nav>
-
-        <div class="header-mercado__carrito">
-            <div class="header-mercado__info">
-                <p class="header-mercado__precio">Q. 0.00</p>
-                <p class="header-mercado__estado">Carrito vacío</p>
-            </div>
-
-            <div class="header-mercado__icono-carrito">
-                <a href="#">
-                    <img src="../../assets/icons/carrito/simple-cart.svg" alt="Carrito de compras vacío">
-                </a>
-            </div>
-        </div>
     </header>
 
     <main class="contenedor">
+        <section>
+            <div class="carrito-compras">
+                <ul class="carrito-compras__contenido">
+                    <li class="carrito-compras__precio">precio</li>
+                    <li class="carrito-compras__estado">Carrito vacio</li>
+                </ul>
+            </div>
+        </section>
+
         <section>
             <header class="seccion-productos__header">
                 <nav class="ruta">
