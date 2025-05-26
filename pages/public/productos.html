@@ -48,10 +48,9 @@
     <main class="contenedor">
         <section>
             <div class="carrito-compras">
-                <ul class="carrito-compras__contenido">
-                    <li class="carrito-compras__precio">precio</li>
-                    <li class="carrito-compras__estado">Carrito vacio</li>
-                </ul>
+                <h2 class="carrito-compras__titulo">Carrito de compras</h2>
+                <ul class="carrito-compras__contenido" id="listadoCarrito"></ul>
+                <p class="carrito-compras__total">Total: Q. <span id="total">0</span></p>
             </div>
         </section>
 
@@ -96,7 +95,38 @@
 
                     <div class="producto__contenido">
                         <div class="producto__detalles">
-                            <p class="producto__nombre">Queso Dos Pinos 250gr.</p>
+                            <p class="producto__nombre">Queso Fresco</p>
+                            <p class="producto__precio ">
+                                Antes <span class="producto__precio--anterior">Q. 38.10</span>
+                            </p>
+                            <p class="producto__precio producto__precio--actual">Q. 18.50</p>
+                        </div>
+
+                        <div class="producto__acciones">
+                            <a href="#" class="btn-primario producto__boton" onclick="agregarAlCarrito(1)">
+                                <span>
+                                    <img src="../../assets/icons/carrito/cart-plus.svg" alt="Agregar al carrito">
+                                </span>
+                                Agregar
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <div class="producto__imagen">
+                        <div class="producto__etiquetas">
+                            <span class="producto__etiqueta producto__etiqueta--online">Exclusivo en línea</span>
+                            <span class="producto__etiqueta producto__etiqueta--favorito">
+                                <img src="../../assets/icons/like/heart.svg" alt="Agregar a favoritos">
+                            </span>
+                            <span class="producto__etiqueta producto__etiqueta--descuento">-14%</span>
+                        </div>
+                    </div>
+
+                    <div class="producto__contenido">
+                        <div class="producto__detalles">
+                            <p class="producto__nombre">Queso Mozzarella 250gr.</p>
                             <p class="producto__precio ">
                                 Antes <span class="producto__precio--anterior">Q. 38.10</span>
                             </p>
@@ -104,6 +134,130 @@
                         </div>
 
                         <div class="producto__acciones">
+                            <a href="#" class="btn-primario producto__boton" onclick="agregarAlCarrito(2)">
+                                <span>
+                                    <img src="../../assets/icons/carrito/cart-plus.svg" alt="Agregar al carrito">
+                                </span>
+                                Agregar
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <div class="producto__imagen">
+                        <div class="producto__etiquetas">
+                            <span class="producto__etiqueta producto__etiqueta--online">Exclusivo en línea</span>
+                            <span class="producto__etiqueta producto__etiqueta--favorito">
+                                <img src="../../assets/icons/like/heart.svg" alt="Agregar a favoritos">
+                            </span>
+                            <span class="producto__etiqueta producto__etiqueta--descuento">-14%</span>
+                        </div>
+                    </div>
+
+                    <div class="producto__contenido">
+                        <div class="producto__detalles">
+                            <p class="producto__nombre">Queso Cheddar 250gr.</p>
+                            <p class="producto__precio ">
+                                Antes <span class="producto__precio--anterior">Q. 38.10</span>
+                            </p>
+                            <p class="producto__precio producto__precio--actual">Q. 35.00</p>
+                        </div>
+
+                        <div class="producto__acciones">
+                            <a href="#" class="btn-primario producto__boton" onclick="agregarAlCarrito(3)">
+                                <span>
+                                    <img src="../../assets/icons/carrito/cart-plus.svg" alt="Agregar al carrito">
+                                </span>
+                                Agregar
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <div class="producto__imagen">
+                        <div class="producto__etiquetas">
+                            <span class="producto__etiqueta producto__etiqueta--online">Exclusivo en línea</span>
+                            <span class="producto__etiqueta producto__etiqueta--favorito">
+                                <img src="../../assets/icons/like/heart.svg" alt="Agregar a favoritos">
+                            </span>
+                            <span class="producto__etiqueta producto__etiqueta--descuento">-14%</span>
+                        </div>
+                    </div>
+
+                    <div class="producto__contenido">
+                        <div class="producto__detalles">
+                            <p class="producto__nombre">Queso Parmesano 250gr.</p>
+                            <p class="producto__precio ">
+                                Antes <span class="producto__precio--anterior">Q. 38.10</span>
+                            </p>
+                            <p class="producto__precio producto__precio--actual">Q. 42.90</p>
+                        </div>
+
+                        <div class="producto__acciones">
+                            <a href="#" class="btn-primario producto__boton" onclick="agregarAlCarrito(4)">
+                                <span>
+                                    <img src="../../assets/icons/carrito/cart-plus.svg" alt="Agregar al carrito">
+                                </span>
+                                Agregar
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <div class="producto__imagen">
+                        <div class="producto__etiquetas">
+                            <span class="producto__etiqueta producto__etiqueta--online">Exclusivo en línea</span>
+                            <span class="producto__etiqueta producto__etiqueta--favorito">
+                                <img src="../../assets/icons/like/heart.svg" alt="Agregar a favoritos">
+                            </span>
+                            <span class="producto__etiqueta producto__etiqueta--descuento">-14%</span>
+                        </div>
+                    </div>
+
+                    <div class="producto__contenido">
+                        <div class="producto__detalles">
+                            <p class="producto__nombre">Queso Oaxaca 250gr.</p>
+                            <p class="producto__precio ">
+                                Antes <span class="producto__precio--anterior">Q. 38.10</span>
+                            </p>
+                            <p class="producto__precio producto__precio--actual">Q. 30.25</p>
+                        </div>
+
+                        <div class="producto__acciones">
+                            <a href="#" class="btn-primario producto__boton" onclick="agregarAlCarrito(5)">
+                                <span>
+                                    <img src="../../assets/icons/carrito/cart-plus.svg" alt="Agregar al carrito">
+                                </span>
+                                Agregar
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <div class="producto__imagen">
+                        <div class="producto__etiquetas">
+                            <span class="producto__etiqueta producto__etiqueta--online">Exclusivo en línea</span>
+                            <span class="producto__etiqueta producto__etiqueta--favorito">
+                                <img src="../../assets/icons/like/heart.svg" alt="Agregar a favoritos">
+                            </span>
+                            <span class="producto__etiqueta producto__etiqueta--descuento">-14%</span>
+                        </div>
+                    </div>
+
+                    <div class="producto__contenido">
+                        <div class="producto__detalles">
+                            <p class="producto__nombre">Queso Panela 250gr.</p>
+                            <p class="producto__precio ">
+                                Antes <span class="producto__precio--anterior">Q. 38.10</span>
+                            </p>
+                            <p class="producto__precio producto__precio--actual">Q. 24.60</p>
+                        </div>
+
+                        <div class="producto__acciones" onclick="agregarAlCarrito(6)">
                             <a href="#" class="btn-primario producto__boton">
                                 <span>
                                     <img src="../../assets/icons/carrito/cart-plus.svg" alt="Agregar al carrito">
@@ -127,15 +281,15 @@
 
                     <div class="producto__contenido">
                         <div class="producto__detalles">
-                            <p class="producto__nombre">Queso Dos Pinos 250gr.</p>
+                            <p class="producto__nombre">Queso Gouda 250gr.</p>
                             <p class="producto__precio ">
                                 Antes <span class="producto__precio--anterior">Q. 38.10</span>
                             </p>
-                            <p class="producto__precio producto__precio--actual">Q. 32.10</p>
+                            <p class="producto__precio producto__precio--actual">Q. 39.95</p>
                         </div>
 
                         <div class="producto__acciones">
-                            <a href="#" class="btn-primario producto__boton">
+                            <a href="#" class="btn-primario producto__boton" onclick="agregarAlCarrito(7)">
                                 <span>
                                     <img src="../../assets/icons/carrito/cart-plus.svg" alt="Agregar al carrito">
                                 </span>
@@ -158,15 +312,15 @@
 
                     <div class="producto__contenido">
                         <div class="producto__detalles">
-                            <p class="producto__nombre">Queso Dos Pinos 250gr.</p>
+                            <p class="producto__nombre">Queso Manchego 250gr.</p>
                             <p class="producto__precio ">
                                 Antes <span class="producto__precio--anterior">Q. 38.10</span>
                             </p>
-                            <p class="producto__precio producto__precio--actual">Q. 32.10</p>
+                            <p class="producto__precio producto__precio--actual">Q. 37.80</p>
                         </div>
 
                         <div class="producto__acciones">
-                            <a href="#" class="btn-primario producto__boton">
+                            <a href="#" class="btn-primario producto__boton" onclick="agregarAlCarrito(8)">
                                 <span>
                                     <img src="../../assets/icons/carrito/cart-plus.svg" alt="Agregar al carrito">
                                 </span>
@@ -189,15 +343,15 @@
 
                     <div class="producto__contenido">
                         <div class="producto__detalles">
-                            <p class="producto__nombre">Queso Dos Pinos 250gr.</p>
+                            <p class="producto__nombre">Queso Azul 250gr.</p>
                             <p class="producto__precio ">
                                 Antes <span class="producto__precio--anterior">Q. 38.10</span>
                             </p>
-                            <p class="producto__precio producto__precio--actual">Q. 32.10</p>
+                            <p class="producto__precio producto__precio--actual">Q. 45.30</p>
                         </div>
 
                         <div class="producto__acciones">
-                            <a href="#" class="btn-primario producto__boton">
+                            <a href="#" class="btn-primario producto__boton" onclick="agregarAlCarrito(9)">
                                 <span>
                                     <img src="../../assets/icons/carrito/cart-plus.svg" alt="Agregar al carrito">
                                 </span>
@@ -220,15 +374,15 @@
 
                     <div class="producto__contenido">
                         <div class="producto__detalles">
-                            <p class="producto__nombre">Queso Dos Pinos 250gr.</p>
+                            <p class="producto__nombre">Queso Ricotta 250gr.</p>
                             <p class="producto__precio ">
                                 Antes <span class="producto__precio--anterior">Q. 38.10</span>
                             </p>
-                            <p class="producto__precio producto__precio--actual">Q. 32.10</p>
+                            <p class="producto__precio producto__precio--actual">Q. 21.75</p>
                         </div>
 
                         <div class="producto__acciones">
-                            <a href="#" class="btn-primario producto__boton">
+                            <a href="#" class="btn-primario producto__boton" onclick="agregarAlCarrito(10)">
                                 <span>
                                     <img src="../../assets/icons/carrito/cart-plus.svg" alt="Agregar al carrito">
                                 </span>
@@ -251,15 +405,15 @@
 
                     <div class="producto__contenido">
                         <div class="producto__detalles">
-                            <p class="producto__nombre">Queso Dos Pinos 250gr.</p>
+                            <p class="producto__nombre">Queso Cottage 250gr.</p>
                             <p class="producto__precio ">
                                 Antes <span class="producto__precio--anterior">Q. 38.10</span>
                             </p>
-                            <p class="producto__precio producto__precio--actual">Q. 32.10</p>
+                            <p class="producto__precio producto__precio--actual">Q. 18.90</p>
                         </div>
 
                         <div class="producto__acciones">
-                            <a href="#" class="btn-primario producto__boton">
+                            <a href="#" class="btn-primario producto__boton" onclick="agregarAlCarrito(11)">
                                 <span>
                                     <img src="../../assets/icons/carrito/cart-plus.svg" alt="Agregar al carrito">
                                 </span>
@@ -282,15 +436,15 @@
 
                     <div class="producto__contenido">
                         <div class="producto__detalles">
-                            <p class="producto__nombre">Queso Dos Pinos 250gr.</p>
+                            <p class="producto__nombre">Queso Suizo 250gr.</p>
                             <p class="producto__precio ">
                                 Antes <span class="producto__precio--anterior">Q. 38.10</span>
                             </p>
-                            <p class="producto__precio producto__precio--actual">Q. 32.10</p>
+                            <p class="producto__precio producto__precio--actual">Q. 40.60</p>
                         </div>
 
                         <div class="producto__acciones">
-                            <a href="#" class="btn-primario producto__boton">
+                            <a href="#" class="btn-primario producto__boton" onclick="agregarAlCarrito(12)">
                                 <span>
                                     <img src="../../assets/icons/carrito/cart-plus.svg" alt="Agregar al carrito">
                                 </span>
@@ -313,15 +467,15 @@
 
                     <div class="producto__contenido">
                         <div class="producto__detalles">
-                            <p class="producto__nombre">Queso Dos Pinos 250gr.</p>
+                            <p class="producto__nombre">Queso Brie 250gr.</p>
                             <p class="producto__precio ">
                                 Antes <span class="producto__precio--anterior">Q. 38.10</span>
                             </p>
-                            <p class="producto__precio producto__precio--actual">Q. 32.10</p>
+                            <p class="producto__precio producto__precio--actual">Q. 49.00</p>
                         </div>
 
                         <div class="producto__acciones">
-                            <a href="#" class="btn-primario producto__boton">
+                            <a href="#" class="btn-primario producto__boton" onclick="agregarAlCarrito(13)">
                                 <span>
                                     <img src="../../assets/icons/carrito/cart-plus.svg" alt="Agregar al carrito">
                                 </span>
@@ -344,170 +498,15 @@
 
                     <div class="producto__contenido">
                         <div class="producto__detalles">
-                            <p class="producto__nombre">Queso Dos Pinos 250gr.</p>
+                            <p class="producto__nombre">Queso Camembert 250gr.</p>
                             <p class="producto__precio ">
                                 Antes <span class="producto__precio--anterior">Q. 38.10</span>
                             </p>
-                            <p class="producto__precio producto__precio--actual">Q. 32.10</p>
+                            <p class="producto__precio producto__precio--actual">Q. 47.50</p>
                         </div>
 
                         <div class="producto__acciones">
-                            <a href="#" class="btn-primario producto__boton">
-                                <span>
-                                    <img src="../../assets/icons/carrito/cart-plus.svg" alt="Agregar al carrito">
-                                </span>
-                                Agregar
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="producto">
-                    <div class="producto__imagen">
-                        <div class="producto__etiquetas">
-                            <span class="producto__etiqueta producto__etiqueta--online">Exclusivo en línea</span>
-                            <span class="producto__etiqueta producto__etiqueta--favorito">
-                                <img src="../../assets/icons/like/heart.svg" alt="Agregar a favoritos">
-                            </span>
-                            <span class="producto__etiqueta producto__etiqueta--descuento">-14%</span>
-                        </div>
-                    </div>
-
-                    <div class="producto__contenido">
-                        <div class="producto__detalles">
-                            <p class="producto__nombre">Queso Dos Pinos 250gr.</p>
-                            <p class="producto__precio ">
-                                Antes <span class="producto__precio--anterior">Q. 38.10</span>
-                            </p>
-                            <p class="producto__precio producto__precio--actual">Q. 32.10</p>
-                        </div>
-
-                        <div class="producto__acciones">
-                            <a href="#" class="btn-primario producto__boton">
-                                <span>
-                                    <img src="../../assets/icons/carrito/cart-plus.svg" alt="Agregar al carrito">
-                                </span>
-                                Agregar
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="producto">
-                    <div class="producto__imagen">
-                        <div class="producto__etiquetas">
-                            <span class="producto__etiqueta producto__etiqueta--online">Exclusivo en línea</span>
-                            <span class="producto__etiqueta producto__etiqueta--favorito">
-                                <img src="../../assets/icons/like/heart.svg" alt="Agregar a favoritos">
-                            </span>
-                            <span class="producto__etiqueta producto__etiqueta--descuento">-14%</span>
-                        </div>
-                    </div>
-
-                    <div class="producto__contenido">
-                        <div class="producto__detalles">
-                            <p class="producto__nombre">Queso Dos Pinos 250gr.</p>
-                            <p class="producto__precio ">
-                                Antes <span class="producto__precio--anterior">Q. 38.10</span>
-                            </p>
-                            <p class="producto__precio producto__precio--actual">Q. 32.10</p>
-                        </div>
-
-                        <div class="producto__acciones">
-                            <a href="#" class="btn-primario producto__boton">
-                                <span>
-                                    <img src="../../assets/icons/carrito/cart-plus.svg" alt="Agregar al carrito">
-                                </span>
-                                Agregar
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="producto">
-                    <div class="producto__imagen">
-                        <div class="producto__etiquetas">
-                            <span class="producto__etiqueta producto__etiqueta--online">Exclusivo en línea</span>
-                            <span class="producto__etiqueta producto__etiqueta--favorito">
-                                <img src="../../assets/icons/like/heart.svg" alt="Agregar a favoritos">
-                            </span>
-                            <span class="producto__etiqueta producto__etiqueta--descuento">-14%</span>
-                        </div>
-                    </div>
-
-                    <div class="producto__contenido">
-                        <div class="producto__detalles">
-                            <p class="producto__nombre">Queso Dos Pinos 250gr.</p>
-                            <p class="producto__precio ">
-                                Antes <span class="producto__precio--anterior">Q. 38.10</span>
-                            </p>
-                            <p class="producto__precio producto__precio--actual">Q. 32.10</p>
-                        </div>
-
-                        <div class="producto__acciones">
-                            <a href="#" class="btn-primario producto__boton">
-                                <span>
-                                    <img src="../../assets/icons/carrito/cart-plus.svg" alt="Agregar al carrito">
-                                </span>
-                                Agregar
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="producto">
-                    <div class="producto__imagen">
-                        <div class="producto__etiquetas">
-                            <span class="producto__etiqueta producto__etiqueta--online">Exclusivo en línea</span>
-                            <span class="producto__etiqueta producto__etiqueta--favorito">
-                                <img src="../../assets/icons/like/heart.svg" alt="Agregar a favoritos">
-                            </span>
-                            <span class="producto__etiqueta producto__etiqueta--descuento">-14%</span>
-                        </div>
-                    </div>
-
-                    <div class="producto__contenido">
-                        <div class="producto__detalles">
-                            <p class="producto__nombre">Queso Dos Pinos 250gr.</p>
-                            <p class="producto__precio ">
-                                Antes <span class="producto__precio--anterior">Q. 38.10</span>
-                            </p>
-                            <p class="producto__precio producto__precio--actual">Q. 32.10</p>
-                        </div>
-
-                        <div class="producto__acciones">
-                            <a href="#" class="btn-primario producto__boton">
-                                <span>
-                                    <img src="../../assets/icons/carrito/cart-plus.svg" alt="Agregar al carrito">
-                                </span>
-                                Agregar
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="producto">
-                    <div class="producto__imagen">
-                        <div class="producto__etiquetas">
-                            <span class="producto__etiqueta producto__etiqueta--online">Exclusivo en línea</span>
-                            <span class="producto__etiqueta producto__etiqueta--favorito">
-                                <img src="../../assets/icons/like/heart.svg" alt="Agregar a favoritos">
-                            </span>
-                            <span class="producto__etiqueta producto__etiqueta--descuento">-14%</span>
-                        </div>
-                    </div>
-
-                    <div class="producto__contenido">
-                        <div class="producto__detalles">
-                            <p class="producto__nombre">Queso Dos Pinos 250gr.</p>
-                            <p class="producto__precio ">
-                                Antes <span class="producto__precio--anterior">Q. 38.10</span>
-                            </p>
-                            <p class="producto__precio producto__precio--actual">Q. 32.10</p>
-                        </div>
-
-                        <div class="producto__acciones">
-                            <a href="#" class="btn-primario producto__boton">
+                            <a href="#" class="btn-primario producto__boton" onclick="agregarAlCarrito(14)">
                                 <span>
                                     <img src="../../assets/icons/carrito/cart-plus.svg" alt="Agregar al carrito">
                                 </span>
@@ -612,6 +611,7 @@
 
         <p class="footer_copyright">superYa©, Todos los derechos reservados 2025</p>
     </footer>
+    <script src="../../js/carrito.js"></script>
 </body>
 
 </html>
